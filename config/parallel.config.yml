@@ -1,6 +1,6 @@
 server: "hub.lambdatest.com"
-user: "Shyamalm"
-key: "xeivSNG0lWRBAww4mvWNo9IdZzY2QcoqUQ6OtiinuJIbyx3YEz"
+user: ""
+key: ""
 
 common_caps:
   "build": "capybara-lambdatest"
