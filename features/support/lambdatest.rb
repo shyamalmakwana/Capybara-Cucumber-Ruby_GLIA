@@ -22,6 +22,9 @@ CONFIG['key'] = ENV['LT_ACCESS_KEY'] || CONFIG['key']
 Capybara.register_driver :lambdatest do |app|
   @caps = CONFIG['common_caps'].merge(CONFIG['browser_caps'][TASK_ID])
 
+  cap = {
+  "LT:Options" => @caps
+}
 
 if (CONFIG_NAME=='jenkins')
 puts ENV['LT_GRID_URL']
@@ -41,7 +44,7 @@ else
   Capybara::Selenium::Driver.new(app,
     :browser => :remote,
     :url => "https://#{CONFIG['user']}:#{CONFIG['key']}@#{CONFIG['server']}/wd/hub",
-    :desired_capabilities => @caps
+    :desired_capabilities => cap
   )
 end
 end

@@ -1,6 +1,6 @@
 server: "hub.lambdatest.com"
-user: "<YOUR LAMBDATEST USERNAME>"
-key: "<YOUR LAMBDATEST KEY>"
+user: "Shyamalm"
+key: "xeivSNG0lWRBAww4mvWNo9IdZzY2QcoqUQ6OtiinuJIbyx3YEz"
 
 common_caps:
   "build": "capybara-lambdatest"
@@ -16,9 +16,9 @@ browser_caps:
     "version": "latest"
     "platform": "Windows 8.1"
   -
-    "browser": "internet explorer"
-    "version": "latest"
-    "platform": "Windows 10"
+    "browserName": "chrome"    
+    "platformName": "Android"
+    "deviceName": "Galaxy S8 Plus"
   -
     "browser": "safari"
     "version": "latest"
