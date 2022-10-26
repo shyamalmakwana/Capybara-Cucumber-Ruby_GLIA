@@ -1,0 +1,25 @@
+server: "hub.lambdatest.com"
+user: ""
+key: ""
+
+common_caps:
+  "build": "capybara-lambdatest"
+  "name": "parallel-Test"
+
+browser_caps:
+  -
+    "browser": "chrome"
+    "version": "latest"
+    "platform": "Windows 7"
+  -
+    "browser": "firefox"
+    "version": "latest"
+    "platform": "Windows 8.1"
+  -
+    "browserName": "chrome"    
+    "platformName": "Android"
+    "deviceName": "Galaxy S8 Plus"
+  -
+    "browser": "safari"
+    "version": "latest"
+    "platform": "macOS High Sierra"
